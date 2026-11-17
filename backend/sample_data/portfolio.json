@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-11",
+  "note": "Made-up data for demo and tests. Not real accounts, not real prices.",
+  "accounts": [
+    {
+      "id": "TAX-4821",
+      "name": "Individual Brokerage",
+      "type": "taxable",
+      "broker": "schwab",
+      "file": "individual_brokerage_schwab.csv",
+      "drip_tickers": ["VTI"]
+    },
+    {
+      "id": "IRA-7730",
+      "name": "Rollover IRA",
+      "type": "ira",
+      "broker": "fidelity",
+      "file": "rollover_ira_fidelity.csv",
+      "drip_tickers": ["AAPL", "KO", "PFE"]
+    }
+  ],
+  "prices": {
+    "AAPL": 226.00,
+    "AMZN": 212.00,
+    "KO": 64.50,
+    "MSFT": 478.00,
+    "NVDA": 160.00,
+    "PFE": 24.80,
+    "VTI": 318.00
+  },
+  "dividends": {
+    "AAPL": [{"pay_date": "2026-11-13", "amount_per_share": 0.26}],
+    "KO":   [{"pay_date": "2026-12-15", "amount_per_share": 0.51}],
+    "MSFT": [{"pay_date": "2026-12-10", "amount_per_share": 0.91}],
+    "PFE":  [{"pay_date": "2026-12-04", "amount_per_share": 0.43}],
+    "VTI":  [{"pay_date": "2026-12-23", "amount_per_share": 0.96}]
+  }
+}
